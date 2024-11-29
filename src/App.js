@@ -1,8 +1,8 @@
 import React from 'react';
-import ScrumStats from './components/ScrumStats';
-import KickStats from './components/KickStats';
-import LineoutStats from './components/LineoutStats';
-import RugbyPitch  from './components/RugbyPitch';
+import ScrumStats from './components/Actions/ScrumStats';
+import KickStats from './components/Actions/KickStats';
+import LineoutStats from './components/Actions/LineoutStats';
+import RugbyPitch  from './components/Pitch/RugbyPitch';
 
 
 function App() {

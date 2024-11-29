@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ScrumStats from './ScrumStats';
-import KickStats from './KickStats';
-import LineoutStats from './LineoutStats';
+import ScrumStats from '../Actions/ScrumStats';
+import KickStats from '../Actions/KickStats';
+import LineoutStats from '../Actions/LineoutStats';
 import Rugby_Pitch from './Rugby_Pitch';
 
 function RugbyPitch() {
