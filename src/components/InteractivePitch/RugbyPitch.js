@@ -28,9 +28,7 @@ function RugbyPitch() {
       <PitchSelection onAreaSelect={handleAreaSelect} />
 
       {/* Display action menu when area is selected */}
-      {selectedArea && !actionType && (
-        <ActionMenu onActionSelect={handleActionSelect} />
-      )}
+      {selectedArea && !actionType && ( <ActionMenu onActionSelect={handleActionSelect} /> )}
 
       {/* Display local stats based on selected action */}
       {actionType === 'scrum' && <ScrumStats />}

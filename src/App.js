@@ -2,7 +2,7 @@ import React from 'react';
 import ScrumStats from './components/Actions/ScrumStats';
 import KickStats from './components/Actions/KickStats';
 import LineoutStats from './components/Actions/LineoutStats';
-import RugbyPitch from './components/Pitch/RugbyPitch';
+import RugbyPitch from './components/InteractivePitch/RugbyPitch';
 
 
 function App() {
