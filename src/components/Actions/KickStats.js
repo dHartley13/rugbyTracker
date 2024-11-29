@@ -1,59 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-//TODO: figure out what to do with kicks for territory 
+function KickStats({ outcome, resetStates }) {
+  const [successfulKicks, setSuccessfulKicks] = useState(0);
+  const [missedKicks, setMissedKicks] = useState(0);
 
-function KickStats() {
-  // State for tracking kicks made for each type
-  const [kicksMade, setKicksMade] = useState(0);
-  const [penaltyKicksMade, setPenaltyKicksMade] = useState(0);
-  const [conversionKicksMade, setConversionKicksMade] = useState(0);
-
-  // State to track the selected kick type
-  const [kickType, setKickType] = useState('penalty'); // default kick type is 'penalty'
-
-  // Event handlers for updating the state
-  const handleKickMade = () => {
-    if (kickType === 'penalty') {
-      setPenaltyKicksMade(penaltyKicksMade + 1);
-    } else if (kickType === 'conversion') {
-      setConversionKicksMade(conversionKicksMade + 1);
+  // Update the stats based on the outcome
+  useEffect(() => {
+    if (outcome === 'successful') {
+      setSuccessfulKicks(prevSuccessfulKicks => prevSuccessfulKicks + 1);
+    } else if (outcome === 'unsuccessful') {
+      setMissedKicks(prevMissedKicks => prevMissedKicks + 1);
     }
-    setKicksMade(kicksMade + 1);
-  };
 
+  }, [outcome]);
+
+   // After updating the stats, reset the parent state
+   useEffect(() => {
+    if (outcome) {
+      resetStates(); 
+    }
+  }, [outcome, resetStates]);
+  
   return (
     <div>
-      <h2>Kick Stats</h2>
-      
-      {/* Kick Type Selector */}
-      <div>
-        <label>
-          <input
-            type="radio"
-            value="penalty"
-            checked={kickType === 'penalty'}
-            onChange={() => setKickType('penalty')}
-          />
-          Penalty
-        </label>
-        <label>
-          <input
-            type="radio"
-            value="conversion"
-            checked={kickType === 'conversion'}
-            onChange={() => setKickType('conversion')}
-          />
-          Conversion
-        </label>
-      </div>
-      
-      {/* Display Kick Stats */}
-      <p>Total Kicks Made: {kicksMade}</p>
-      <p>Penalty Kicks Made: {penaltyKicksMade}</p>
-      <p>Conversion Kicks Made: {conversionKicksMade}</p>
-
-      {/* Button to register a successful kick */}
-      <button onClick={handleKickMade}>Kick Made</button>
+    <h2>Kick Stats</h2>
+      <p>Successful Kicks: {successfulKicks}</p>
+      <p>Missed Kicks: {missedKicks}</p>
     </div>
   );
 }

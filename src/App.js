@@ -8,7 +8,6 @@ import RugbyPitch from './components/InteractivePitch/RugbyPitch';
 function App() {
   return (
     <div className="App">
-      <h1>Rugby Performance Tracker</h1>
       <div className="stats-container">
         <ScrumStats />
         <KickStats />

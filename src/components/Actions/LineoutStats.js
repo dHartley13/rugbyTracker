@@ -1,21 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function LineoutStats() {
-  // State to track lineouts won and lost
-  const [lineoutsWon, setLineoutsWon] = useState(0);
-  const [lineoutsLost, setLineoutsLost] = useState(0);
+function LineoutStats({ outcome, resetStates }) {
+  const [wonLineouts, setWonLineouts] = useState(0);
+  const [lostLineouts, setLostLineouts] = useState(0);
 
-  // Event handlers to update state
-  const handleLineoutWin = () => setLineoutsWon(lineoutsWon + 1);
-  const handleLineoutLoss = () => setLineoutsLost(lineoutsLost + 1);
+  // Update the stats based on the outcome
+  useEffect(() => {
+    if (outcome === 'successful') {
+      setWonLineouts(prevWonLineouts => prevWonLineouts + 1);
+    } else if (outcome === 'unsuccessful') {
+      setLostLineouts(prevLostLineouts => prevLostLineouts + 1);
+    }
+
+  }, [outcome]);
+
+   // After updating the stats, reset the parent state
+   useEffect(() => {
+    if (outcome) {
+      resetStates(); 
+    }
+  }, [outcome, resetStates]);
+  
 
   return (
     <div>
-      <h2>Lineout Stats</h2>
-      <p>Lineouts Won: {lineoutsWon}</p>
-      <p>Lineouts Lost: {lineoutsLost}</p>
-      <button onClick={handleLineoutWin}>Lineout Won</button>
-      <button onClick={handleLineoutLoss}>Lineout Lost</button>
+    <h2>Scrum Stats</h2>
+      <p>Lineouts Won: {wonLineouts}</p>
+      <p>Lineouts Lost: {lostLineouts}</p>
     </div>
   );
 }
