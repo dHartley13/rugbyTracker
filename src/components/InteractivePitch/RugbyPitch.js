@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PitchSelection from './PitchSelection';
-import ActionMenu from '../ActionMenu/ActionMenu';
+import ActionMenu from '../Actions/ActionMenu';
 import ScrumStats from '../Actions/ScrumStats';
 import KickStats from '../Actions/KickStats';
 import LineoutStats from '../Actions/LineoutStats';
