@@ -27,13 +27,14 @@ function PitchSelection({ onAreaSelect }) {
     }
 
     if (area) {
-      onAreaSelect(area);
+      const position = {x, y};
+      onAreaSelect(area, position);
     }
   };
 
   return (
     <div className='pitchWrapper'>
-      <PitchSVG />
+      <PitchSVG onClick={handleClick}/>
     </div>
   );
 }

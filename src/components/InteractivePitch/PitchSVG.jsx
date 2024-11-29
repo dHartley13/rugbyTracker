@@ -1,11 +1,13 @@
 import * as React from "react";
 
-const PitchSVG = (props) => (
+const PitchSVG = ({onClick}) => {
+  return (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="743.995"
     height="1073.391"
     version="1"
+    onClick={onClick}
   >
     <rect
       id="backgroundrect"
@@ -520,5 +522,7 @@ const PitchSVG = (props) => (
     <rect className="pitch-area" x="66.66%" y="50%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
   </svg>
 );
+
+};
 
 export default PitchSVG;
