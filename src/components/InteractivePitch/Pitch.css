@@ -1,7 +1,6 @@
 
 /* Set the default color of each area to transparent */
 .pitch-area {
-    fill: transparent;
     transition: fill 0.2s ease;  
   }
   

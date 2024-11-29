@@ -1,5 +1,6 @@
 import React from 'react';
 import './Pitch.css';
+import PitchSVG from './PitchSVG';
 
 // The PitchSection component's sole job is to represent a section of the pitch and handle clicks (or interactions) within that section.
 
@@ -31,21 +32,9 @@ function PitchSelection({ onAreaSelect }) {
   };
 
   return (
-    <svg
-      width="800"
-      height="400"
-      viewBox="0 0 800 400" // Added for responsive scaling
-      onClick={handleClick} // Handle the click event
-      className="pitch-svg"
-    >
-      {/* Defining the sections of the rugby pitch as clickable areas */}
-      <rect className="pitch-area" width="33.33%" height="50%" />
-      <rect className="pitch-area" x="33.33%" width="33.33%" height="50%" />
-      <rect className="pitch-area" x="66.66%" width="33.33%" height="50%" />
-      <rect className="pitch-area" y="50%" width="33.33%" height="50%" />
-      <rect className="pitch-area" x="33.33%" y="50%" width="33.33%" height="50%" />
-      <rect className="pitch-area" x="66.66%" y="50%" width="33.33%" height="50%" />
-    </svg>
+    <div className='pitchWrapper'>
+      <PitchSVG />
+    </div>
   );
 }
 

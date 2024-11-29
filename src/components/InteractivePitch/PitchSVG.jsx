@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Rugby_PitchSVG = (props) => (
+const PitchSVG = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="743.995"
@@ -512,6 +512,12 @@ const Rugby_PitchSVG = (props) => (
         </g>
       </g>
     </g>
+    <rect className="pitch-area" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1" />
+    <rect className="pitch-area" x="33.33%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
+    <rect className="pitch-area" x="66.66%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
+    <rect className="pitch-area" y="50%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
+    <rect className="pitch-area" x="33.33%" y="50%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
+    <rect className="pitch-area" x="66.66%" y="50%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
   </svg>
 );
 
