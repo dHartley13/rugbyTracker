@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto" }) => (
+const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto", onZoneClick }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg2"
@@ -235,7 +235,7 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto" }) => (
              H4851.8
             Z                   
           "
-          onClick={() => alert('Clicked on the 22m zone on the RIGHT side of the LEFT Half')} // Action for clicking the zone
+          onClick={(e) => onZoneClick(e.target.id)}
         />
 
         {/* left side Left Half 22m Zone */}
@@ -250,7 +250,7 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto" }) => (
              H4851.8
             Z                   
           "
-          onClick={() => alert('Clicked on the 22m zone on the LEFT side of the LEFT Half')} // Action for clicking the zone
+          onClick={(e) => onZoneClick(e.target.id)}
         />
 
 
@@ -266,13 +266,13 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto" }) => (
               H4851.65
               Z                   
               "
-          onClick={() => alert('22m_rightside_lefthalf_lineout')} // Action for clicking the zone
+          onClick={(e) => onZoneClick(e.target.id)}
         /> 
        
        
-        {/* left side Left Half 22m Zone */}
+        {/*  22m left side left half lineout */}
         <path
-          id="leftHalf_leftside_22mZone"
+          id="22m left side left half lineout"
           fill="rgba(255, 255, 255, 0.3)" // Semi-transparent fill to indicate it's clickable
           stroke="blue"  // Red border to ensure it's visible
           strokeWidth="20"
@@ -283,7 +283,7 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto" }) => (
              H4851.8
             Z                   
           "
-          onClick={() => alert('leftHalf_leftside_22mZone')} // Action for clicking the zone
+          onClick={(e) => onZoneClick(e.target.id)}
         />
         
       </g>
