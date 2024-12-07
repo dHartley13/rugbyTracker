@@ -3,11 +3,11 @@ import * as React from "react";
 const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto", onZoneClick }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    id="svg2"
     style={{ 
       width, 
-      height,
       maxWidth,
+      height,
+
     }}
     viewBox="0 0 4060 2643.867"
   >
@@ -235,7 +235,10 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto", onZone
              H4851.8
             Z                   
           "
-          onClick={(e) => onZoneClick(e.target.id)}
+          onClick={(e) => {
+            console.log('clicked zone id:', e.target.id);
+            onZoneClick(e.target.id);
+          }}
         />
 
         {/* left side Left Half 22m Zone */}
@@ -250,7 +253,10 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto", onZone
              H4851.8
             Z                   
           "
-          onClick={(e) => onZoneClick(e.target.id)}
+          onClick={(e) => {
+            console.log('clicked zone id:', e.target.id);
+            onZoneClick(e.target.id);
+          }}
         />
 
 
@@ -266,7 +272,10 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto", onZone
               H4851.65
               Z                   
               "
-          onClick={(e) => onZoneClick(e.target.id)}
+              onClick={(e) => {
+                console.log('clicked zone id:', e.target.id);
+                onZoneClick(e.target.id);
+              }}
         /> 
        
        
@@ -283,7 +292,10 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto", onZone
              H4851.8
             Z                   
           "
-          onClick={(e) => onZoneClick(e.target.id)}
+          onClick={(e) => {
+            console.log('clicked zone id:', e.target.id);
+            onZoneClick(e.target.id);
+          }}
         />
         
       </g>

@@ -1,26 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
-function LineoutStats({ outcome, resetStates }) {
+function LineoutStats({ outcome }) {
   const [wonLineouts, setWonLineouts] = useState(0);
   const [lostLineouts, setLostLineouts] = useState(0);
 
   // Update the stats based on the outcome
   useEffect(() => {
-    if (outcome === 'successful') {
+    if (outcome === 'Won') {
       setWonLineouts(prevWonLineouts => prevWonLineouts + 1);
-    } else if (outcome === 'unsuccessful') {
+    } else if (outcome === 'Lost') {
       setLostLineouts(prevLostLineouts => prevLostLineouts + 1);
     }
 
   }, [outcome]);
 
-   // After updating the stats, reset the parent state
-   useEffect(() => {
-    if (outcome) {
-      resetStates(); 
-    }
-  }, [outcome, resetStates]);
-  
 
   return (
     <div className="lineout-stats-container">
