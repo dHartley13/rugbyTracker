@@ -20,10 +20,13 @@ function ScrumStats({ outcome, resetStates }) {
   }, [outcome, resetStates]);
 
   return (
-    <div>
-      <h2>Scrum Stats</h2>
-      <p>Scrums Won: {scrumsWon}</p>
-      <p>Scrums Lost: {scrumsLost}</p>
+    <div className="scrum-stats-container">
+      <div className="scrum-stats-item">
+        <h2>Scrum Stats</h2>
+        <p>Scrums Won: {scrumsWon}</p>
+        <p>Scrums Lost: {scrumsLost}</p>
+      </div>
+      {/* Add any additional stats in a similar way if needed */}
     </div>
   );
 }

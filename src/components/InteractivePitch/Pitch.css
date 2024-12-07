@@ -7,3 +7,48 @@
   .pitch-area:hover {
     fill: rgba(0, 0, 0, 0.2); 
   }
+
+/* New Styles for Stats Section */
+.pitchWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Distribute the stats horizontally */
+  padding: 10px;
+  background-color: #f8f8f8; /* Light background for visibility */
+  margin-bottom: 20px; /* Space between stats and pitch */
+}
+
+.stat {
+  flex: 1; /* Equal width for each stat block */
+  text-align: center;
+  margin: 0 10px; /* Add some spacing between the stat blocks */
+}
+
+.stat h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.stat p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.pitchContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pitchContainer svg {
+  max-width: 100%; /* Make sure the pitch scales to fit the container */
+  height: auto; /* Maintain the aspect ratio */
+}

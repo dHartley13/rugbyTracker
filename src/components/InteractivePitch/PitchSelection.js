@@ -34,8 +34,30 @@ function PitchSelection({ onAreaSelect }) {
   };
 
   return (
-    <div className='pitchWrapper'>
-      <PitchSVG onClick={handleClick}/>
+    <div className="pitchWrapper">
+      {/* Stats Section - Rendered above the pitch */}
+      <div className="statsContainer">
+        <div className="stat">
+          <h2>Scrum Stats</h2>
+          <p>Scrums Won: 0</p>
+          <p>Scrums Lost: 0</p>
+        </div>
+        <div className="stat">
+          <h2>Kick Stats</h2>
+          <p>Successful Kicks: 0</p>
+          <p>Missed Kicks: 0</p>
+        </div>
+        <div className="stat">
+          <h2>Lineout Stats</h2>
+          <p>Lineouts Won: 0</p>
+          <p>Lineouts Lost: 0</p>
+        </div>
+      </div>
+
+      {/* Pitch - Your pitch with the click handler */}
+      <div className="pitchContainer">
+        <PitchSVG onClick={handleClick} />
+      </div>
     </div>
   );
 }

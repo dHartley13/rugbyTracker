@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import PitchSelection from './PitchSelection';
 import ActionMenu from '../Actions/ActionMenu';
 import OutcomeMenu from '../OutcomeMenu';
-import ScrumStats from '../Actions/ScrumStats';
-import KickStats from '../Actions/KickStats';
-import LineoutStats from '../Actions/LineoutStats';
+import ScrumStats from '../Actions/Scrums/ScrumStats';
+import KickStats from '../Actions/Kicks/KickStats';
+import LineoutStats from '../Actions/Lineouts/LineoutStats';
 
 
 // Helper function to reset state

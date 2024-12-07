@@ -22,10 +22,12 @@ function KickStats({ outcome, resetStates }) {
   }, [outcome, resetStates]);
   
   return (
-    <div>
-    <h2>Kick Stats</h2>
-      <p>Successful Kicks: {successfulKicks}</p>
-      <p>Missed Kicks: {missedKicks}</p>
+    <div className="kick-stats-container">
+      <div className="kick-stats-item">
+        <h2>Kick Stats</h2>
+        <p>Successful Kicks: {successfulKicks}</p>
+        <p>Missed Kicks: {missedKicks}</p>
+      </div>
     </div>
   );
 }

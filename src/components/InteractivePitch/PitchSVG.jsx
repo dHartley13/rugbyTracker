@@ -1,528 +1,294 @@
 import * as React from "react";
 
-const PitchSVG = ({onClick}) => {
-  return (
+const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="743.995"
-    height="1073.391"
-    version="1"
-    onClick={onClick}
+    id="svg2"
+    style={{ 
+      width, 
+      height,
+      maxWidth,
+    }}
+    viewBox="0 0 4060 2643.867"
   >
-    <rect
-      id="backgroundrect"
-      width="100%"
-      height="100%"
-      x="0"
-      y="0"
-      fill="none"
-      stroke="none"
-    ></rect>
-    <defs id="defs12118">
-      <linearGradient id="linearGradient5883">
-        <stop id="stop5885" offset="0" stopColor="#fff" stopOpacity="1"></stop>
-        <stop id="stop5887" offset="1" stopColor="#fff" stopOpacity="0"></stop>
-      </linearGradient>
-    </defs>
-    <g className="currentLayer">
-      <g id="g6861" strokeOpacity="1">
+    <g id="g8" transform="matrix(1.33333 0 0 -1.33333 0 2643.867)">
+      <g
+        id="g10"
+        fillOpacity="1"
+        fillRule="nonzero"
+        stroke="none"
+        transform="scale(.1)"
+      >
+
+      {/* pitch surrounding */}
         <path
-          id="rect6729"
-          fill="#1c961b"
-          fillOpacity="1"
-          stroke="none"
-          strokeDasharray="none"
-          strokeMiterlimit="4"
-          strokeWidth="0.988"
-          d="M0 0h744v1073H0z"
+          id="pitchSurrounding"
+          fill="#5da75d"
+          d="M30440 10H10v19809h30430zM1948.52 17083.5v-14338H28501.5v14338z"
         ></path>
         <path
-          id="path2258"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeDasharray="none"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeMiterlimit="4"
-          strokeWidth="1"
-          d="M31.257 1022.366V49.18l684.108-1.229v974.414z"
+          id="SVGBorder"
+          fill="#349134"
+          d="M5 19824v-5h30435V10H10v19814zv-5zH0V0h30450v19829H0v-5z"
         ></path>
         <path
-          id="path3169"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="0.996"
-          d="M103.138 140.998v809.896"
+          id="playingPitch_BackgroundColour"
+          fill="#5da75d"
+          d="M1948.52 2745.5h26553v14338h-26553z"
         ></path>
+
+
+        {/* pitch border */}
+          <path
+            id="leftSide_deadballLine"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="50"
+            d="M1998.52 2795.5H28451.5"
+          />
+      
+          <path
+            id="rightHalf_deadballLine"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="50"
+            d="M28451.5 2795.5v14238"
+          />
+      
+          <path
+            id="Righside_deadballLine"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="50"
+            d="M1998.52 17050.5H28451.5"
+          />
+      
+          <path
+            id="lefthalf_deadballLine"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="50"
+            d="M1998.52 2795.5v14238"
+          />
+
         <path
-          id="path3171"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="0.996"
-          d="M643.257 141.139v809.896"
-        ></path>
-        <g
-          id="g6332"
+          id="Halfwayline"
           fill="#fff"
-          fillOpacity="1"
-          strokeDasharray="none"
-          strokeMiterlimit="4"
-        >
-          <path
-            id="rect6723"
-            stroke="#fff"
-            strokeWidth="0.618"
-            d="M329.207 951.076h7.936v105.366h-7.936z"
-          ></path>
-          <path
-            id="rect6725"
-            stroke="#fff"
-            strokeWidth="0.618"
-            d="M409.478 951.251h7.936v105.366h-7.936z"
-          ></path>
-          <path
-            id="rect6727"
-            stroke="none"
-            strokeWidth="0.508"
-            d="M991.554-412.869h7.936v79.117h-7.936z"
-            transform="rotate(90)"
-          ></path>
-        </g>
-        <path
-          id="path2266"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="M32.306 752.43c682.538-.697 683.234.696 683.234.696"
+          d="M15097.7 2745.7h-100v14337.8h100z"
         ></path>
         <path
-          id="path2268"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="M30.913 950.36c682.538-.697 683.234.696 683.234.696"
-        ></path>
-        <path
-          id="path2292"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m211.512 716.097-.138 72.294"
-        ></path>
-        <path
-          id="path2294"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m535.2 716.097-.14 72.294"
-        ></path>
-        <path
-          id="path3185"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m121.24 896.56 53.988.037"
-        ></path>
-        <path
-          id="path3187"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m211.065 896.415 53.988.037"
-        ></path>
-        <path
-          id="path3201"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m301.18 896.415 53.987.037"
-        ></path>
-        <path
-          id="path3203"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m391.149 896.415 53.988.037"
-        ></path>
-        <path
-          id="path3205"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m480.974 896.271 53.989.037"
-        ></path>
-        <path
-          id="path3207"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m571.089 896.415 53.988.037"
-        ></path>
-        <path
-          id="path2264"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="M31.61 536.445c682.537-.696 683.234.696 683.234.696"
-        ></path>
-        <path
-          id="path2288"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m534.811 500.693-.138 72.294"
-        ></path>
-        <path
-          id="path2290"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m211.368 500.693-.139 72.294"
-        ></path>
-        <path
-          id="path3181"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m121.095 644.558 53.988.036"
-        ></path>
-        <path
-          id="path3183"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m211.21 644.558 53.988.036"
-        ></path>
-        <path
-          id="path3197"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m301.18 644.413 53.987.037"
-        ></path>
-        <path
-          id="path3199"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m391.293 644.413 53.989.037"
-        ></path>
-        <path
-          id="path3209"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m480.974 644.558 53.989.036"
-        ></path>
-        <path
-          id="path3211"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m570.944 644.558 53.988.036"
-        ></path>
-        <path
-          id="path6239"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="M714.147 320.173c-682.537.697-683.234-.696-683.234-.696"
-        ></path>
-        <path
-          id="path6241"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="M715.54 122.243c-682.537.696-683.234-.696-683.234-.696"
-        ></path>
-        <path
-          id="path6243"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m534.941 356.506.139-72.294"
-        ></path>
-        <path
-          id="path6245"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m211.254 356.506.139-72.294"
-        ></path>
-        <path
-          id="path6247"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m625.358 428.045-53.988-.037"
-        ></path>
-        <path
-          id="path6249"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m535.244 428.045-53.988-.037"
-        ></path>
-        <path
-          id="path6251"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m625.214 176.043-53.988-.037"
-        ></path>
-        <path
-          id="path6253"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m535.389 176.187-53.989-.037"
-        ></path>
-        <path
-          id="path6255"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m445.274 428.19-53.988-.037"
-        ></path>
-        <path
-          id="path6257"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m355.16 428.19-53.988-.037"
-        ></path>
-        <path
-          id="path6259"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m445.274 176.187-53.988-.037"
-        ></path>
-        <path
-          id="path6261"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m355.305 176.187-53.989-.037"
-        ></path>
-        <path
-          id="path6263"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m265.48 176.332-53.99-.037"
-        ></path>
-        <path
-          id="path6265"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m175.365 176.187-53.988-.037"
-        ></path>
-        <path
-          id="path6267"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m265.48 428.045-53.99-.037"
-        ></path>
-        <path
-          id="path6269"
-          fill="none"
-          fillOpacity="0.75"
-          fillRule="evenodd"
-          stroke="#fff"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeWidth="1"
-          d="m175.51 428.045-53.989-.037"
-        ></path>
-        <g
-          id="g6337"
+          id="lefthalf_10mline"
           fill="#fff"
-          fillOpacity="1"
-          strokeDasharray="none"
-          strokeMiterlimit="4"
-        >
-          <path
-            id="rect6339"
-            stroke="#fff"
-            strokeWidth="0.618"
-            d="M325.88 927.33h7.936v105.366h-7.936z"
-            transform="matrix(1 0 0 -1 3.327 1050.163)"
-          ></path>
-          <path
-            id="rect6341"
-            stroke="#fff"
-            strokeWidth="0.618"
-            d="M406.151 927.505h7.936v105.366h-7.936z"
-            transform="matrix(1 0 0 -1 3.327 1050.163)"
-          ></path>
-          <path
-            id="rect6343"
-            stroke="none"
-            strokeWidth="0.508"
-            d="M967.808-409.542h7.936v79.117h-7.936z"
-            transform="matrix(0 -1 -1 0 3.327 1050.163)"
-          ></path>
-        </g>
+          d="M12159.7 2745.7h-100v14337.8h100z"
+        ></path>
+        <path
+          id="righthalf_10mline"
+          fill="#fff"
+          d="M17837.1 2745.7h-100v14337.8h100z"
+        ></path>
+        <path
+          id="lefthalf_22mline"
+          fill="#fff"
+          d="M7850.65 2745.7h-100v14337.8h100z"
+        ></path>
+        <path
+          id="leftside_5mline"
+          fill="#fff"
+          d="M5001.8 3897.2h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm254.2 0h-104.2v60h104.2z"
+        ></path>
+        <path
+          id="righside_5mline"
+          fill="#fff"
+          d="M5001.8 15899.3h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm350 0h-200v60h200zm254.2 0h-104.2v60h104.2z"
+        ></path>
+        <path
+          id="leftHalf_TryLine"
+          fill="#fff"
+          d="M4851.8 2745.7h-100v14337.8h100z"
+        ></path>
+        <path
+          id="rightHalf_TryLine"
+          fill="#fff"
+          d="M25606 2745.7h-100v14337.8h100z"
+        ></path>
+        <path
+          id="rightHalf_22mLine"
+          fill="#fff"
+          d="M22408.2 2745.7h-100v14337.8h100z"
+        ></path>
+        <path
+          id="leftHalf_RightSide_5m_15mline"
+          fill="#fff"
+          d="M4801.8 5365.8h1091.9v60H4801.8Z"
+        ></path>
+        <path
+          id="leftHalf_RightSide_22m_15mline"
+          fill="#fff"
+          d="M7036.91 5365.8H8576.1v60H7036.91Z"
+        ></path>
+        <path
+          id="leftHalf_RightSide_10m_15mline"
+          fill="#fff"
+          d="M11340.1 5365.8h1539.2v60h-1539.2z"
+        ></path>
+        <path
+          id="RightSide_Halfway_15mline"
+          fill="#fff"
+          d="M14278.1 5365.8h1539.2v60h-1539.2z"
+        ></path>
+        <path
+          id="rightHalf_RightSide_10m_15mline"
+          fill="#fff"
+          d="M17017.5 5365.8h1539.2v60h-1539.2z"
+        ></path>
+        <path
+          id="rightHalf_RightSide_22m_15mline"
+          fill="#fff"
+          d="M21588.6 5365.8h1539.2v60h-1539.2z"
+        ></path>
+        <path id="leftHalf_RightSide_5mFromTryline" fill="#fff" d="M5863.7 4952.3h60v887.102h-60z"></path>
+        <path
+          id="rightHalf_RightSide_5m_15mline"
+          fill="#fff"
+          d="M24508.2 5365.8h1091.9v60h-1091.9z"
+        ></path>
+        <path
+          id="rightHalf_RightSide_5mFromTryline"
+          fill="#fff"
+          d="M24478.2 4952.3h60v887.102h-60z"
+        ></path>
+        <path
+          id="leftHalf_LeftSide_5m_15mline"
+          fill="#fff"
+          d="M4801.8 14166.1h1091.9v60H4801.8Z"
+        ></path>
+        <path
+          id="leftHalf_LeftSide_22m_15mline"
+          fill="#fff"
+          d="M7036.91 14166.1H8576.1v60H7036.91Z"
+        ></path>
+        <path
+          id="leftHalf_LeftSide_10m_15mline"
+          fill="#fff"
+          d="M11340.1 14166.1h1539.2v60h-1539.2z"
+        ></path>
+        <path
+          id="LeftSide_Halfway_15mline"
+          fill="#fff"
+          d="M14278.1 14166.1h1539.2v60h-1539.2z"
+        ></path>
+        <path
+          id="rightHalf_LeftSide_10m_15mline"
+          fill="#fff"
+          d="M17017.5 14166.1h1539.2v60h-1539.2z"
+        ></path>
+        <path
+          id="rightHalf_LeftSide_22m_15mline"
+          fill="#fff"
+          d="M21588.6 14166.1h1539.2v60h-1539.2z"
+        ></path>
+        <path
+          id="leftHalf_LeftSide_5mFromTryline"
+          fill="#fff"
+          d="M5863.7 13752.6h60v887.078h-60z"
+        ></path>
+        <path
+          id="rightHalf_LeftSide_5m_15mline"
+          fill="#fff"
+          d="M24508.2 14166.1h1091.9v60h-1091.9z"
+        ></path>
+        <path
+          id="rightHalf_LeftSide_5mFromTryline"
+          fill="#fff"
+          d="M24478.2 13752.6h60v887.078h-60z"
+        ></path>
+        <path
+          id="leftside_rightpost"
+          fill="#fff"
+          d="M4801.8 9071.4h1956.36v60H4801.8Z"
+        ></path>
+        <path
+          id="leftSide_leftpost"
+          fill="#fff"
+          d="M4801.8 11210.7h1956.36v60H4801.8Z"
+        ></path>
+        <path id="leftside_crossbar" fill="#fff" d="M6057.36 9101.4h60v2139.3h-60z"></path>
+        <path id="rightside_rightpost" fill="#fff" d="M23530 9071.4h1956.3v60H23530Z"></path>
+        <path
+          id="rightside_leftpost"
+          fill="#fff"
+          d="M23530 11210.7h1956.3v60H23530Z"
+        ></path>
+        <path id="rightside_crossbar" fill="#fff" d="M24170.8 9101.4h60v2139.3h-60z"></path>
+
+        {/* ZONES */}
+
+        {/* Right side Left Half 22m Zone */}
+        <path
+          id="leftHalf_rightside_22mZone"
+          fill="rgba(255, 255, 255, 0.3)" // Semi-transparent fill to indicate it's clickable
+          stroke="#ff0000"  // Red border to ensure it's visible
+          strokeWidth="20"
+          d="
+             M4851.8 10100.7 H7850.65
+             V3900.65
+             H4851.8
+            Z                   
+          "
+          onClick={() => alert('Clicked on the 22m zone on the RIGHT side of the LEFT Half')} // Action for clicking the zone
+        />
+
+        {/* left side Left Half 22m Zone */}
+        <path
+          id="leftHalf_leftside_22mZone"
+          fill="rgba(255, 255, 255, 0.3)" // Semi-transparent fill to indicate it's clickable
+          stroke="#ff0000"  // Red border to ensure it's visible
+          strokeWidth="20"
+          d="
+             M4851.8 10100.7 H7850.65
+             V15900.65
+             H4851.8
+            Z                   
+          "
+          onClick={() => alert('Clicked on the 22m zone on the LEFT side of the LEFT Half')} // Action for clicking the zone
+        />
+
+
+        {/* 22m right side left half lineout */}
+        <path
+          id="22m_rightside_lefthalf_lineout"
+          fill="rgba(255, 255, 255, 0.3)" // Semi-transparent fill to indicate it's clickable
+          stroke="blue"  // Red border to ensure it's visible
+          strokeWidth="20"
+          d="
+              M4851 3900.65 H7850.65
+              V2745.7
+              H4851.65
+              Z                   
+              "
+          onClick={() => alert('22m_rightside_lefthalf_lineout')} // Action for clicking the zone
+        /> 
+       
+       
+        {/* left side Left Half 22m Zone */}
+        <path
+          id="leftHalf_leftside_22mZone"
+          fill="rgba(255, 255, 255, 0.3)" // Semi-transparent fill to indicate it's clickable
+          stroke="blue"  // Red border to ensure it's visible
+          strokeWidth="20"
+          d="
+             M4851.8 15900.7 
+             H7850.65
+             V17100.65
+             H4851.8
+            Z                   
+          "
+          onClick={() => alert('leftHalf_leftside_22mZone')} // Action for clicking the zone
+        />
+        
       </g>
     </g>
-    <rect className="pitch-area" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1" />
-    <rect className="pitch-area" x="33.33%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
-    <rect className="pitch-area" x="66.66%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
-    <rect className="pitch-area" y="50%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
-    <rect className="pitch-area" x="33.33%" y="50%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
-    <rect className="pitch-area" x="66.66%" y="50%" width="33.33%" height="50%" fill="transparent" stroke="black" strokewidth="1"/>
   </svg>
 );
-
-};
 
 export default PitchSVG;

@@ -1,19 +1,17 @@
-import React from 'react';
-import ScrumStats from './components/Actions/ScrumStats';
-import KickStats from './components/Actions/KickStats';
-import LineoutStats from './components/Actions/LineoutStats';
-import RugbyPitch from './components/InteractivePitch/RugbyPitch';
-
+import React, { useState } from 'react';
+import PitchSelection from './components/InteractivePitch/PitchSelection.js'; 
+import './App.css';
 
 function App() {
+  const [outcome, setOutcome] = useState(null);
+
+  const resetStates = () => {
+    setOutcome(null); // Reset outcome after updating stats
+  };
+
   return (
     <div className="App">
-      <div className="stats-container">
-        <ScrumStats />
-        <KickStats />
-        <LineoutStats />
-        <RugbyPitch />
-      </div>
+      <PitchSelection/>
     </div>
   );
 }

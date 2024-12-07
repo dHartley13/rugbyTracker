@@ -23,10 +23,12 @@ function LineoutStats({ outcome, resetStates }) {
   
 
   return (
-    <div>
-    <h2>Scrum Stats</h2>
-      <p>Lineouts Won: {wonLineouts}</p>
-      <p>Lineouts Lost: {lostLineouts}</p>
+    <div className="lineout-stats-container">
+      <div className="lineout-stats-item">
+        <h2>Lineout Stats</h2>
+        <p>Lineouts Won: {wonLineouts}</p>
+        <p>Lineouts Lost: {lostLineouts}</p>
+      </div>
     </div>
   );
 }
