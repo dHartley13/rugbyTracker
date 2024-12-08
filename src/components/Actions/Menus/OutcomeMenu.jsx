@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import './OutcomeMenu.css';
 
 const OutcomeMenu = ({ position, action, onOutcomeSelect }) => {
-    const [selectedOutcome, setSelectedOutcome]=useState(null);
 
     const handleOutcomeSelect = (outcome) => {
-        setSelectedOutcome(outcome);
-        onOutcomeSelect(action, outcome);
+        onOutcomeSelect(outcome);
     }
 
     const getOutcomesForAction = (action) => {
@@ -24,10 +22,6 @@ const OutcomeMenu = ({ position, action, onOutcomeSelect }) => {
     };
 
     const outcomes = getOutcomesForAction(action)
-
-    if (!position || position.x === undefined || position.y === undefined) {
-        return null; // Don't render OutcomeMenu if position is invalid
-      }
 
     return (
         <div 

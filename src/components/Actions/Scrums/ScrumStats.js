@@ -5,18 +5,20 @@ function ScrumStats({ outcome }) {
   const [scrumsLost, setScrumsLost] = useState(0);
 
   useEffect(() => {
+    console.log('Outcome changed:', outcome);
     if (outcome === 'Won') {
       setScrumsWon((prevScrumsWon) => prevScrumsWon + 1);
     } else if (outcome === 'Lost') {
       setScrumsLost((prevScrumsLost) => prevScrumsLost + 1);
     }
+    console.log('scrums won:', scrumsWon);
+    console.log('scrums Lost:', scrumsLost);
   }, [outcome]);
 
 
   return (
     <div className="scrum-stats-container">
       <div className="scrum-stats-item">
-        <h2>Scrum Stats</h2>
         <p>Scrums Won: {scrumsWon}</p>
         <p>Scrums Lost: {scrumsLost}</p>
       </div>

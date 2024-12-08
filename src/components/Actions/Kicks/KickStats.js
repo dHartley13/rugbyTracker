@@ -5,6 +5,7 @@ function KickStats({ outcome }) {
   const [missedKicks, setMissedKicks] = useState(0);
 
   useEffect(() => {
+    console.log('Outcome changed:', outcome);
     if (outcome === 'Won') {
       setSuccessfulKicks((prevsuccessfulKicks) => prevsuccessfulKicks + 1);
     } else if (outcome === 'Lost') {
@@ -16,7 +17,6 @@ function KickStats({ outcome }) {
   return (
     <div className="kick-stats-container">
       <div className="kick-stats-item">
-        <h2>Kick Stats</h2>
         <p>Successful Kicks: {successfulKicks}</p>
         <p>Missed Kicks: {missedKicks}</p>
       </div>
