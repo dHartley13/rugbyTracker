@@ -1,19 +1,17 @@
 
 
-const selectStatCounter = (action, outcome, KickStats, ScrumStats, LineoutStats) => {
+const selectStatCounter = (selectedAction, selectedOutcome, KickStats, ScrumStats, LineoutStats) => {
 
-    switch (action) {
+    switch (selectedAction) {
         case 'Kick':
-            KickStats({outcome});
-            break;
+            return <KickStats outcome={selectedOutcome} />;
         case 'Scrum':
-            ScrumStats({outcome});
-            break;
+            return <ScrumStats outome={selectedOutcome} />;
         case 'Lineout':
-            LineoutStats({outcome})
-            break;
+            return <LineoutStats outcome={selectedOutcome}/>;
         default:
             console.error('unkown action selected');
+            return null;
 };
 }
 

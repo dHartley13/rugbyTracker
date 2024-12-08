@@ -6,7 +6,6 @@ const OutcomeMenu = ({ position, action, onOutcomeSelect }) => {
 
     const handleOutcomeSelect = (outcome) => {
         setSelectedOutcome(outcome);
-
         onOutcomeSelect(action, outcome);
     }
 
@@ -25,6 +24,10 @@ const OutcomeMenu = ({ position, action, onOutcomeSelect }) => {
     };
 
     const outcomes = getOutcomesForAction(action)
+
+    if (!position || position.x === undefined || position.y === undefined) {
+        return null; // Don't render OutcomeMenu if position is invalid
+      }
 
     return (
         <div 

@@ -235,10 +235,7 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto", onZone
              H4851.8
             Z                   
           "
-          onClick={(e) => {
-            console.log('clicked zone id:', e.target.id);
-            onZoneClick(e.target.id);
-          }}
+          onClick={(e) => onZoneClick(e.target.id, e)}
         />
 
         {/* left side Left Half 22m Zone */}
@@ -253,10 +250,7 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto", onZone
              H4851.8
             Z                   
           "
-          onClick={(e) => {
-            console.log('clicked zone id:', e.target.id);
-            onZoneClick(e.target.id);
-          }}
+          onClick={(e) => onZoneClick(e.target.id, e)}
         />
 
 
@@ -272,10 +266,7 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto", onZone
               H4851.65
               Z                   
               "
-              onClick={(e) => {
-                console.log('clicked zone id:', e.target.id);
-                onZoneClick(e.target.id);
-              }}
+              onClick={(e) => onZoneClick(e.target.id, e)}  
         /> 
        
        
@@ -292,10 +283,7 @@ const PitchSVG = ({ width = "66.6%", maxWidth = "800px", height = "auto", onZone
              H4851.8
             Z                   
           "
-          onClick={(e) => {
-            console.log('clicked zone id:', e.target.id);
-            onZoneClick(e.target.id);
-          }}
+          onClick={(e) => onZoneClick(e.target.id, e)}
         />
         
       </g>
